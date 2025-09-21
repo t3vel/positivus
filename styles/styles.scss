@@ -1,0 +1,10 @@
+// 1. Спочатку змінні і міксіни
+@import 'variables';
+@import 'mixins';
+@import 'media'; // <- тут описані mobile / mobile-above
+
+// 2. Далі решта
+@import 'normalize';
+@import 'fonts';
+@import 'utils'; // тут використовуєш @include mobile
+@import 'globals';

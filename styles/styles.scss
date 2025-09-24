@@ -8,3 +8,6 @@
 @import 'fonts';
 @import 'utils'; // тут використовуєш @include mobile
 @import 'globals';
+
+@import 'blocks/button';
+@import 'blocks/header';

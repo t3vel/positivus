@@ -1,0 +1,44 @@
+.header {
+  padding-top: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  &__menu {
+    font-size: 20px;
+    margin-left: auto;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        background-color: currentColor;
+        width: 0;
+        height: 2px;
+        transition-duration: inherit;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
